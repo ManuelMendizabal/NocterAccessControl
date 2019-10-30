@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="178.0" prefWidth="395.0" style="-fx-background-color: #eff0f1;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mendi.nocter.SettingsOptions.GroupDataController">
+   <children>
+      <TextField fx:id="txtGroup" layoutX="19.0" layoutY="36.0" prefHeight="25.0" prefWidth="230.0" />
+      <JFXButton id="btnSave" fx:id="btnSave" layoutX="272.0" layoutY="137.0" onMousePressed="#btnSave_Clicked" prefHeight="25.0" prefWidth="109.0" style="-fx-background-color: limegreen;" text="Guardar" textFill="#f8f7f7" />
+      <Label layoutX="19.0" layoutY="16.0" text="Grupo" />
+      <JFXButton id="btnClose" fx:id="btnDelete" disable="true" layoutX="19.0" layoutY="137.0" onMousePressed="#btnClose_Clicked" prefHeight="25.0" prefWidth="109.0" style="-fx-background-color: #d11a2a;" text="Borrar" textFill="#f8f7f7" />
+      <Label layoutX="19.0" layoutY="69.0" text="Horario" />
+      <TextField fx:id="txtSchedule" disable="true" layoutX="19.0" layoutY="89.0" prefHeight="25.0" prefWidth="185.0" />
+      <ImageView fx:id="btnSchedule" fitHeight="32.0" fitWidth="40.0" layoutX="205.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/lupa.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

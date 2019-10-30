@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mendi.nocter.MainController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="606.0" layoutX="-3.0" opacity="0.62" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../images/MainBackground.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="205.0" fitWidth="295.0" layoutX="42.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/nocterLogo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="42.0" layoutY="276.0" text="Control de presencia" textFill="#2d2c32">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="296.0" layoutY="43.0" minHeight="0.0" minWidth="0.0" prefHeight="309.0" prefWidth="277.0" style="-fx-background-color: #0d98ba;">
+         <children>
+            <TextField id="txtUser" fx:id="txtUser" layoutX="41.0" layoutY="94.0" style="-fx-background-color: #333333; -fx-text-inner-color: white;" />
+            <PasswordField fx:id="txtPassword" layoutX="41.0" layoutY="141.0" style="-fx-background-color: #333333; -fx-text-inner-color: white;" />
+            <Text fill="WHITE" layoutX="41.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario" />
+            <Text fill="WHITE" layoutX="41.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña" />
+            <Button id="btnEntrar" layoutX="41.0" layoutY="198.0" mnemonicParsing="false" onMouseClicked="#btnLogin_Clicked" prefHeight="64.0" prefWidth="195.0" style="-fx-background-color: #333333;" text="FICHAR" textFill="WHITE">
+               <font>
+                  <Font size="29.0" />
+               </font></Button>
+            <Text fx:id="txtTime" fill="WHITE" layoutX="89.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="09:00">
+               <font>
+                  <Font name="Arial Bold" size="39.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtDate" fill="WHITE" layoutX="101.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="05/06/2019" />
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+     <ImageView id="btnClose" fitHeight="37.0" fitWidth="42.0" layoutX="550.0" layoutY="3.0" onMousePressed="#btnClose_Clicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/closeWhite.png" />
+         </image>
+      </ImageView>
+      <ImageView id="btnSettings" fitHeight="57.0" fitWidth="63.0" layoutX="7.0" layoutY="3.0" onMousePressed="#btnSettings_Clicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/settings.png" />
+         </image>
+         <effect>
+            <Glow level="0.29" />
+         </effect>
+      </ImageView>
+   </children>
+</AnchorPane>

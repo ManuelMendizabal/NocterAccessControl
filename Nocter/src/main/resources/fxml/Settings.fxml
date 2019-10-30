@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.image.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mendi.nocter.SettingsController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="606.0" layoutX="-3.0" opacity="0.21" pickOnBounds="true" smooth="false">
+         <image>
+            <Image url="@../images/MainBackground.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="400.0" prefWidth="125.0" style="-fx-background-color: #0d98ba;">
+         <children>
+            <JFXButton id="btnUsers" alignment="BASELINE_LEFT" contentDisplay="RIGHT" layoutX="1.0" layoutY="176.0" onMousePressed="#btnUsers_Clicked" prefHeight="25.0" prefWidth="152.0" text="Usuarios" textAlignment="RIGHT">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></JFXButton>
+            <JFXButton id="btnGroups" alignment="BASELINE_LEFT" contentDisplay="RIGHT" disable="true" layoutX="1.0" layoutY="201.0" onMousePressed="#btnGroups_Clicked" prefHeight="25.0" prefWidth="152.0" text="Grupos" textAlignment="RIGHT">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></JFXButton>
+            <JFXButton id="btnSchedules" alignment="BASELINE_LEFT" contentDisplay="RIGHT" disable="true" layoutX="1.0" layoutY="226.0" onMousePressed="#btnSchedules_Clicked" prefHeight="25.0" prefWidth="152.0" text="Horarios" textAlignment="RIGHT">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></JFXButton>
+            <JFXButton id="btnMovType" alignment="BASELINE_LEFT" contentDisplay="RIGHT" disable="true" layoutX="1.0" layoutY="251.0" onMousePressed="#btnSchedules_Clicked" prefHeight="25.0" prefWidth="152.0" text="Motivos" textAlignment="RIGHT">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" contentDisplay="RIGHT" disable="true" layoutX="1.0" layoutY="276.0" prefHeight="25.0" prefWidth="152.0" text="Calendario" textAlignment="RIGHT">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></JFXButton>
+            <JFXButton alignment="BASELINE_LEFT" contentDisplay="RIGHT" disable="true" layoutX="1.0" layoutY="301.0" prefHeight="25.0" prefWidth="152.0" text="Registro de faltas" textAlignment="RIGHT">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></JFXButton>
+            <JFXButton id="btnInformation" alignment="BASELINE_LEFT" contentDisplay="RIGHT" layoutX="1.0" layoutY="326.0" onMousePressed="#btnInformation_Clicked" prefHeight="25.0" prefWidth="152.0" text="Informes" textAlignment="RIGHT">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></JFXButton>
+            <ImageView fitHeight="127.0" fitWidth="179.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/nocterLogo.png" />
+               </image>
+            </ImageView>
+            <JFXButton id="btnClose" alignment="BASELINE_LEFT" contentDisplay="RIGHT" layoutY="356.0" onMousePressed="#btnClose_Clicked" prefHeight="44.0" prefWidth="153.0" style="-fx-background-color: gray;" text="SALIR" textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <Text layoutX="21.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Administración" />
+            <Text layoutX="21.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Panel de" />
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="157.0" prefHeight="394.0" prefWidth="443.0">
+         <children>
+            <fx:include fx:id="layoutUsers" source="../fxml/SettingsOptions/Users.fxml" visible="true" />
+            <fx:include fx:id="layoutGroups" source="../fxml/SettingsOptions/Group.fxml" visible="false" />
+            <fx:include fx:id="layoutSchedules" source="../fxml/SettingsOptions/Schedule.fxml" visible="false" />
+            <fx:include fx:id="layoutInformation" source="../fxml/SettingsOptions/Information.fxml" visible="false" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

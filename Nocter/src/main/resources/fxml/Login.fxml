@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="248.0" prefWidth="475.0" style="-fx-background-color: #0d98ba;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mendi.nocter.LoginController">
+   <children>
+      <TextField id="txtUser" fx:id="txtUser" layoutX="41.0" layoutY="84.0" style="-fx-background-color: #333333; -fx-text-inner-color: white;" />
+      <PasswordField fx:id="txtPassword" layoutX="41.0" layoutY="131.0" style="-fx-background-color: #333333; -fx-text-inner-color: white;" />
+      <Text fill="WHITE" layoutX="41.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Usuario" />
+      <Text fill="WHITE" layoutX="41.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contraseña" />
+      <Button id="btnEntrar" layoutX="238.0" layoutY="85.0" mnemonicParsing="false" onMouseClicked="#btnLogin_Clicked" prefHeight="73.0" prefWidth="195.0" style="-fx-background-color: #333333;" text="Entrar" textFill="WHITE" />
+      <Text id="btnLostPassword" fill="WHITE" layoutX="153.0" layoutY="203.0" strokeType="OUTSIDE" strokeWidth="0.0" onMouseClicked="#btnLostPassword_Clicked" text="¿Olvidaste tu contraseña?" />
+      <Text fill="WHITE" layoutX="72.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Introduzca accesos de administrador">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+       <!--<ImageView id="btnClose" fitHeight="21.0" fitWidth="22.0" layoutX="439.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" onMousePressed="#btnClose_Clicked">
+         <image>
+            <Image url="@resources/closeWhite.png" />
+         </image>
+      </ImageView>-->
+   </children>
+   <effect>
+      <Reflection />
+   </effect>
+</AnchorPane>
