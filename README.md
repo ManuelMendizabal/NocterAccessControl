@@ -10,3 +10,5 @@ Database: https://github.com/ManuelMendizabal/NocterAccessControl/blob/master/Da
 Presentation
 https://github.com/ManuelMendizabal/NocterAccessControl/blob/master/Documentation/Presentation-ESP.pdf
 
+You can contact me by email. Mendinformatica@gmail.com
+Manuel Mendizábal González
